@@ -35,10 +35,6 @@ deriveLift ''BaseImage
 
 deriveLift ''Arguments
 
-deriveLift ''Instruction
-
-deriveLift ''InstructionPos
-
 deriveLift ''SourcePath
 
 deriveLift ''TargetPath
@@ -81,8 +77,12 @@ deriveLift ''RunFlags
 
 deriveLift ''RunArgs
 
-deriveLift ''PragmaDirective
-
 deriveLift ''EscapeChar
 
 deriveLift ''SyntaxImage
+
+deriveLift ''PragmaDirective
+
+deriveLift ''Instruction
+
+deriveLift ''InstructionPos

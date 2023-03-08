@@ -7,13 +7,13 @@ packages:
 - completed:
     hackage: language-docker-10.0.1@sha256:9bd912d88f82b19887cd4d926047a91a4f02883e98e4f515b218dfea2a2a2c68,3324
     pantry-tree:
-      size: 2210
       sha256: 5ba75a400271816e1b8f61e6aa085873b451a87d0012f1c8e5c7bc1b5d19913c
+      size: 2210
   original:
     hackage: language-docker-10.0.1@sha256:9bd912d88f82b19887cd4d926047a91a4f02883e98e4f515b218dfea2a2a2c68,3324
 snapshots:
 - completed:
-    size: 585393
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/0.yaml
-    sha256: c632012da648385b9fa3c29f4e0afd56ead299f1c5528ee789058be410e883c0
-  original: lts-18.0
+    sha256: b37c0abab16c7de352c45b85f8ecc8530b084209a2c42987a96c92b4a5e3cd65
+    size: 648924
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/20/13.yaml
+  original: lts-20.13
