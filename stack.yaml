@@ -6,4 +6,4 @@ packages:
 # forks / in-progress versions pinned to a git hash. For example:
 #
 extra-deps:
-- language-docker-11.0.0@sha256:3406ff0c1d592490f53ead8cf2cd22bdf3d79fd125ccaf3add683f6d71c24d55,3883
+- language-docker-12.1.0@sha256:f95c2ddc9a8a5cf844e3788e8860ca0b1a142deddb4535072c3da4eacd6febd8,4075

@@ -40,7 +40,7 @@ spec = do
                                             , digest = Nothing
                                             , platform = Nothing}
                                  )
-                          , Expose (Ports [Port 8080 TCP, PortStr "$PORT"])
+                          , Expose (Ports [PortSpec (Port 8080 TCP), PortSpec (PortStr "$PORT")])
                           , Run "apt-get update"
                           , Cmd "node something.js"
                           ]

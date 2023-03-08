@@ -1,10 +1,8 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.4.
+-- This file has been generated from package.yaml by hpack version 0.35.0.
 --
 -- see: https://github.com/sol/hpack
---
--- hash: fbcbae9e11125cf03d93aaa1089210f84d3a208cc6c2411e54cdf972d00a2bb5
 
 name:           dockerfile-creator
 version:        0.1.1.0
@@ -40,7 +38,7 @@ library
     , bytestring >=0.10
     , data-default-class
     , free
-    , language-docker >=11.0.0
+    , language-docker >=12.0.0
     , megaparsec >=8.0
     , mtl
     , template-haskell
@@ -71,7 +69,7 @@ test-suite dockerfile-composer-test
     , filepath
     , free
     , hspec
-    , language-docker >=11.0.0
+    , language-docker >=12.0.0
     , megaparsec >=8.0
     , mtl
     , process

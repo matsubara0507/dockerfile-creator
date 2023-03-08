@@ -290,23 +290,23 @@ ownedBy (args, Syntax.CopyFlags _ cm link src) owner = (args, Syntax.CopyFlags o
 to :: NonEmpty Syntax.SourcePath -> Syntax.TargetPath -> (Syntax.CopyArgs, Syntax.CopyFlags)
 to sources dest = (Syntax.CopyArgs sources dest, def)
 
-ports :: [Syntax.Port] -> Syntax.Ports
+ports :: [Syntax.PortSpec] -> Syntax.Ports
 ports = Syntax.Ports
 
-tcpPort :: Int -> Syntax.Port
-tcpPort = flip Syntax.Port Syntax.TCP
+tcpPort :: Int -> Syntax.PortSpec
+tcpPort n = Syntax.PortSpec $ Syntax.Port n Syntax.TCP
 
-udpPort :: Int -> Syntax.Port
-udpPort = flip Syntax.Port Syntax.UDP
+udpPort :: Int -> Syntax.PortSpec
+udpPort n = Syntax.PortSpec $ Syntax.Port n Syntax.UDP
 
-variablePort :: Text -> Syntax.Port
-variablePort varName = Syntax.PortStr ("$" <> varName)
+variablePort :: Text -> Syntax.PortSpec
+variablePort varName = Syntax.PortSpec $ Syntax.PortStr ("$" <> varName)
 
-portRange :: Int -> Int -> Syntax.Port
-portRange a b = Syntax.PortRange a b Syntax.TCP
+portRange :: Int -> Int -> Syntax.PortSpec
+portRange a b = Syntax.PortRangeSpec $ Syntax.PortRange (Syntax.Port a Syntax.TCP) (Syntax.Port b Syntax.TCP)
 
-udpPortRange :: Int -> Int -> Syntax.Port
-udpPortRange a b = Syntax.PortRange a b Syntax.UDP
+udpPortRange :: Int -> Int -> Syntax.PortSpec
+udpPortRange a b = Syntax.PortRangeSpec $ Syntax.PortRange (Syntax.Port a Syntax.UDP) (Syntax.Port b Syntax.UDP)
 
 check :: Syntax.Arguments args -> Syntax.Check args
 check command =

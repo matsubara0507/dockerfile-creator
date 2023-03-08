@@ -19,6 +19,10 @@ deriveLift ''Protocol
 
 deriveLift ''Port
 
+deriveLift ''PortRange
+
+deriveLift ''PortSpec
+
 deriveLift ''Ports
 
 deriveLift ''Registry

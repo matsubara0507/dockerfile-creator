@@ -55,7 +55,7 @@ spec = do
                         expose $ ports [portRange 90 100]
                         expose $ ports [udpPortRange 190 200])
             r `shouldBe` printed [ "FROM scratch"
-                                 , "EXPOSE $PORT 80/tcp 51/udp"
+                                 , "EXPOSE $PORT 80 51/udp"
                                  , "EXPOSE 90-100"
                                  , "EXPOSE 190-200/udp"
                                  ]
