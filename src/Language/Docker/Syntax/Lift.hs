@@ -43,11 +43,17 @@ deriveLift ''Chown
 
 deriveLift ''Chmod
 
+deriveLift ''Link
+
 deriveLift ''CopySource
 
 deriveLift ''CopyArgs
 
+deriveLift ''CopyFlags
+
 deriveLift ''AddArgs
+
+deriveLift ''AddFlags
 
 deriveLift ''Duration
 

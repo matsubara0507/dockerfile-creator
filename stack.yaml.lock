@@ -5,12 +5,12 @@
 
 packages:
 - completed:
-    hackage: language-docker-10.0.1@sha256:9bd912d88f82b19887cd4d926047a91a4f02883e98e4f515b218dfea2a2a2c68,3324
+    hackage: language-docker-11.0.0@sha256:3406ff0c1d592490f53ead8cf2cd22bdf3d79fd125ccaf3add683f6d71c24d55,3883
     pantry-tree:
-      sha256: 5ba75a400271816e1b8f61e6aa085873b451a87d0012f1c8e5c7bc1b5d19913c
-      size: 2210
+      sha256: c268e7e4fd5aef20fe0f861820afd1954366bec0a533fb91c101b326cb50e793
+      size: 2895
   original:
-    hackage: language-docker-10.0.1@sha256:9bd912d88f82b19887cd4d926047a91a4f02883e98e4f515b218dfea2a2a2c68,3324
+    hackage: language-docker-11.0.0@sha256:3406ff0c1d592490f53ead8cf2cd22bdf3d79fd125ccaf3add683f6d71c24d55,3883
 snapshots:
 - completed:
     sha256: b37c0abab16c7de352c45b85f8ecc8530b084209a2c42987a96c92b4a5e3cd65

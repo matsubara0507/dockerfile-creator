@@ -40,7 +40,7 @@ library
     , bytestring >=0.10
     , data-default-class
     , free
-    , language-docker >=10.0.0
+    , language-docker >=11.0.0
     , megaparsec >=8.0
     , mtl
     , template-haskell
@@ -71,7 +71,7 @@ test-suite dockerfile-composer-test
     , filepath
     , free
     , hspec
-    , language-docker >=10.0.0
+    , language-docker >=11.0.0
     , megaparsec >=8.0
     , mtl
     , process
